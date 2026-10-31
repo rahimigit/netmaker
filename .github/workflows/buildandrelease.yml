@@ -1,13 +1,12 @@
 name: Build and Release
 
 on:
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
   workflow_dispatch:
     inputs:
       version:
         description: 'Netmaker version'
         required: false
-  release:
-    types: [published]
 
 jobs:
   build:
